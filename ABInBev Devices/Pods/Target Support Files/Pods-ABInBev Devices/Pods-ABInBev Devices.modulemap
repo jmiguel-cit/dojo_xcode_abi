@@ -1,0 +1,6 @@
+framework module Pods_ABInBev_Devices {
+  umbrella header "Pods-ABInBev Devices-umbrella.h"
+
+  export *
+  module * { export * }
+}
