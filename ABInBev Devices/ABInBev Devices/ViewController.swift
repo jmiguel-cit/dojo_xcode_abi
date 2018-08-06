@@ -11,23 +11,10 @@ import Firebase
 
 class ViewController: UIViewController {
 
-    //Firebase RealTime
-    var dbRealTime: DatabaseReference!
-    
-    //Firebase FireStore
-    var dbFireStore: Firestore!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //Firebase RealTime
-        dbRealTime = Database.database().reference()
-        
-        //Firebase FireStore
-        let settings = FirestoreSettings()
-        Firestore.firestore().settings = settings
-        dbFireStore = Firestore.firestore()
     }
 }
 
