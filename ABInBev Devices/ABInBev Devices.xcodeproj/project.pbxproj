@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2067F7212118A0A9004629EC /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7202118A0A9004629EC /* DeviceInfo.swift */; };
+		2067F7232118A1C6004629EC /* FakeQRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */; };
+		2067F7252118A618004629EC /* FirestoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7242118A618004629EC /* FirestoreRepository.swift */; };
 		20B5165721176F5C00A4AB64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5165621176F5C00A4AB64 /* AppDelegate.swift */; };
 		20B5165921176F5C00A4AB64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5165821176F5C00A4AB64 /* ViewController.swift */; };
 		20B5165C21176F5C00A4AB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B5165A21176F5C00A4AB64 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2067F7202118A0A9004629EC /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeQRCodeReader.swift; sourceTree = "<group>"; };
+		2067F7242118A618004629EC /* FirestoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRepository.swift; sourceTree = "<group>"; };
 		20B5165321176F5C00A4AB64 /* ABInBev Devices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABInBev Devices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B5165621176F5C00A4AB64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B5165821176F5C00A4AB64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +72,10 @@
 				20B516682117706F00A4AB64 /* GoogleService-Info.plist */,
 				20B5165621176F5C00A4AB64 /* AppDelegate.swift */,
 				20B5165821176F5C00A4AB64 /* ViewController.swift */,
+				2067F7242118A618004629EC /* FirestoreRepository.swift */,
 				20B5165A21176F5C00A4AB64 /* Main.storyboard */,
+				2067F7202118A0A9004629EC /* DeviceInfo.swift */,
+				2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */,
 				20B5165D21176F5F00A4AB64 /* Assets.xcassets */,
 				20B5165F21176F5F00A4AB64 /* LaunchScreen.storyboard */,
 				20B5166221176F5F00A4AB64 /* Info.plist */,
@@ -221,6 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B5165921176F5C00A4AB64 /* ViewController.swift in Sources */,
+				2067F7252118A618004629EC /* FirestoreRepository.swift in Sources */,
+				2067F7232118A1C6004629EC /* FakeQRCodeReader.swift in Sources */,
+				2067F7212118A0A9004629EC /* DeviceInfo.swift in Sources */,
 				20B5165721176F5C00A4AB64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

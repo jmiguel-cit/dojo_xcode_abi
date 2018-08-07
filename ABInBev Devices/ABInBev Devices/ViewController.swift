@@ -16,5 +16,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func readAllDevicesPressed(_ sender: Any) {
+        
+        FirestoreRepository.shared.getAllDevices()
+        
+    }
+    @IBAction func InsertFirestorePressed(_ sender: Any) {
+        process()
+    }
+    func process() {
+        //Ler o QRCode
+        //TODO Substituir pela implementacao que le um QR Code real
+        let deviceinfo = FakeQRCodeReader.read()
+        
+        //Gravar no banco de dados
+        FirestoreRepository.shared.addEntity(entity: deviceinfo)
+        
+    }
 }
 
