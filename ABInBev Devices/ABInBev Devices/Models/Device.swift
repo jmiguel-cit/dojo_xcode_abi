@@ -7,11 +7,11 @@
 //
 
 import Foundation
-struct  DeviceInfo: Codable {
+struct  Device: Codable {
     var codigo: String
     var fabricante: String
     var modelo: String
     var imei: String
     var observacao: String
-    var patrimonio: Int?
+    var patrimonio: String
 }

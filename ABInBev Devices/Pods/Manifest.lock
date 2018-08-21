@@ -66,6 +66,7 @@ PODS:
     - gRPC-Core (= 1.13.0)
     - gRPC-RxLibrary (= 1.13.0)
   - leveldb-library (1.20)
+  - M13Checkbox (3.2.2)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -77,9 +78,10 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Firestore
+  - M13Checkbox (from `https://github.com/djbe/M13Checkbox.git`, branch `swift_4_2`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BoringSSL
     - Firebase
     - FirebaseAnalytics
@@ -96,6 +98,16 @@ SPEC REPOS:
     - nanopb
     - Protobuf
 
+EXTERNAL SOURCES:
+  M13Checkbox:
+    :branch: swift_4_2
+    :git: https://github.com/djbe/M13Checkbox.git
+
+CHECKOUT OPTIONS:
+  M13Checkbox:
+    :commit: 33d9d13b22f01b99ffc878f84fdb51b80b27f4f7
+    :git: https://github.com/djbe/M13Checkbox.git
+
 SPEC CHECKSUMS:
   BoringSSL: cf3f1793eb6e3c445c4d150456341f149c268a35
   Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
@@ -110,9 +122,10 @@ SPEC CHECKSUMS:
   gRPC-ProtoRPC: 842797fbe05dfcf891afb4a5048e5ccf5f06ef86
   gRPC-RxLibrary: fa6852f98d6ec0b73c0ec2f6406c26943099d501
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  M13Checkbox: 82182615a76646475b451ebe448a998f77f8cc6e
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
 
-PODFILE CHECKSUM: ab8d4ac38340fb2c2514fc0fbfff8a3e2d676f24
+PODFILE CHECKSUM: 7b04d628aa627530ef98e9a881211601861d3eea
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

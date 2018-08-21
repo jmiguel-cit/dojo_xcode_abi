@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2067F7212118A0A9004629EC /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7202118A0A9004629EC /* DeviceInfo.swift */; };
+		2067F7212118A0A9004629EC /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7202118A0A9004629EC /* Device.swift */; };
 		2067F7232118A1C6004629EC /* FakeQRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */; };
 		2067F7252118A618004629EC /* FirestoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7242118A618004629EC /* FirestoreRepository.swift */; };
 		20B5165721176F5C00A4AB64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5165621176F5C00A4AB64 /* AppDelegate.swift */; };
@@ -16,11 +16,17 @@
 		20B5165E21176F5F00A4AB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B5165D21176F5F00A4AB64 /* Assets.xcassets */; };
 		20B5166121176F5F00A4AB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B5165F21176F5F00A4AB64 /* LaunchScreen.storyboard */; };
 		20B516692117706F00A4AB64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20B516682117706F00A4AB64 /* GoogleService-Info.plist */; };
+		24AC3246212B47AE002935B5 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC3245212B47AE002935B5 /* DevicesViewController.swift */; };
+		24AC3249212B4C5B002935B5 /* FreeDevicesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC3248212B4C5B002935B5 /* FreeDevicesTableViewDelegate.swift */; };
+		24AC324D212B5A16002935B5 /* FreeDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AC324C212B5A16002935B5 /* FreeDeviceTableViewCell.xib */; };
+		24AC3250212B5C30002935B5 /* FreeDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC324F212B5C30002935B5 /* FreeDeviceTableViewCell.swift */; };
+		24AC3252212B6A35002935B5 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AC3251212B6A35002935B5 /* LoadingTableViewCell.xib */; };
+		24AC3254212B8538002935B5 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC3253212B8538002935B5 /* CamViewController.swift */; };
 		3E7F16D4DB683F5CF6F8C9CA /* Pods_ABInBev_Devices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F44BE6C6CA87503A57BAE14 /* Pods_ABInBev_Devices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2067F7202118A0A9004629EC /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		2067F7202118A0A9004629EC /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeQRCodeReader.swift; sourceTree = "<group>"; };
 		2067F7242118A618004629EC /* FirestoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRepository.swift; sourceTree = "<group>"; };
 		20B5165321176F5C00A4AB64 /* ABInBev Devices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABInBev Devices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +37,12 @@
 		20B5166021176F5F00A4AB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B5166221176F5F00A4AB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20B516682117706F00A4AB64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24AC3245212B47AE002935B5 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		24AC3248212B4C5B002935B5 /* FreeDevicesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDevicesTableViewDelegate.swift; sourceTree = "<group>"; };
+		24AC324C212B5A16002935B5 /* FreeDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		24AC324F212B5C30002935B5 /* FreeDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		24AC3251212B6A35002935B5 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
+		24AC3253212B8538002935B5 /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
 		2B4F89F9FA2E5715F264B8EB /* Pods-ABInBev Devices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABInBev Devices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABInBev Devices/Pods-ABInBev Devices.debug.xcconfig"; sourceTree = "<group>"; };
 		5F44BE6C6CA87503A57BAE14 /* Pods_ABInBev_Devices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABInBev_Devices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44FF660051252C4C96D4339 /* Pods-ABInBev Devices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABInBev Devices.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABInBev Devices/Pods-ABInBev Devices.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,18 +81,56 @@
 		20B5165521176F5C00A4AB64 /* ABInBev Devices */ = {
 			isa = PBXGroup;
 			children = (
+				24AC324B212B59E5002935B5 /* Cells */,
+				24AC324A212B5022002935B5 /* Models */,
+				24AC3247212B4985002935B5 /* Delegates */,
 				20B516682117706F00A4AB64 /* GoogleService-Info.plist */,
 				20B5165621176F5C00A4AB64 /* AppDelegate.swift */,
 				20B5165821176F5C00A4AB64 /* ViewController.swift */,
 				2067F7242118A618004629EC /* FirestoreRepository.swift */,
 				20B5165A21176F5C00A4AB64 /* Main.storyboard */,
-				2067F7202118A0A9004629EC /* DeviceInfo.swift */,
 				2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */,
 				20B5165D21176F5F00A4AB64 /* Assets.xcassets */,
 				20B5165F21176F5F00A4AB64 /* LaunchScreen.storyboard */,
 				20B5166221176F5F00A4AB64 /* Info.plist */,
+				24AC3245212B47AE002935B5 /* DevicesViewController.swift */,
+				24AC3253212B8538002935B5 /* CamViewController.swift */,
 			);
 			path = "ABInBev Devices";
+			sourceTree = "<group>";
+		};
+		24AC3247212B4985002935B5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				24AC3248212B4C5B002935B5 /* FreeDevicesTableViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		24AC324A212B5022002935B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2067F7202118A0A9004629EC /* Device.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24AC324B212B59E5002935B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				24AC324E212B5BFF002935B5 /* Xibs */,
+				24AC324F212B5C30002935B5 /* FreeDeviceTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		24AC324E212B5BFF002935B5 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				24AC324C212B5A16002935B5 /* FreeDeviceTableViewCell.xib */,
+				24AC3251212B6A35002935B5 /* LoadingTableViewCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		901CD3EE3810C6A6627CB63C /* Pods */ = {
@@ -160,10 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AC3252212B6A35002935B5 /* LoadingTableViewCell.xib in Resources */,
 				20B5166121176F5F00A4AB64 /* LaunchScreen.storyboard in Resources */,
 				20B516692117706F00A4AB64 /* GoogleService-Info.plist in Resources */,
 				20B5165E21176F5F00A4AB64 /* Assets.xcassets in Resources */,
 				20B5165C21176F5C00A4AB64 /* Main.storyboard in Resources */,
+				24AC324D212B5A16002935B5 /* FreeDeviceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +231,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ABInBev Devices/Pods-ABInBev Devices-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -191,6 +244,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -232,7 +286,11 @@
 				20B5165921176F5C00A4AB64 /* ViewController.swift in Sources */,
 				2067F7252118A618004629EC /* FirestoreRepository.swift in Sources */,
 				2067F7232118A1C6004629EC /* FakeQRCodeReader.swift in Sources */,
-				2067F7212118A0A9004629EC /* DeviceInfo.swift in Sources */,
+				24AC3254212B8538002935B5 /* CamViewController.swift in Sources */,
+				2067F7212118A0A9004629EC /* Device.swift in Sources */,
+				24AC3249212B4C5B002935B5 /* FreeDevicesTableViewDelegate.swift in Sources */,
+				24AC3250212B5C30002935B5 /* FreeDeviceTableViewCell.swift in Sources */,
+				24AC3246212B47AE002935B5 /* DevicesViewController.swift in Sources */,
 				20B5165721176F5C00A4AB64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,13 +439,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M5Q5B5D5T2;
+				DEVELOPMENT_TEAM = 3SFJ572R3C;
 				INFOPLIST_FILE = "ABInBev Devices/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ciandt.dojo-xcode.abidevices.ABInBev-Devices";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ciandt.dojo-xcode.abidevices.ABInBev-Devices-fabio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -400,13 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M5Q5B5D5T2;
+				DEVELOPMENT_TEAM = 3SFJ572R3C;
 				INFOPLIST_FILE = "ABInBev Devices/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ciandt.dojo-xcode.abidevices.ABInBev-Devices";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ciandt.dojo-xcode.abidevices.ABInBev-Devices-fabio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;

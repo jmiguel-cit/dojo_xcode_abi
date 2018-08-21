@@ -17,7 +17,7 @@ class FirestoreRepository {
     
     private init() {}
     
-    func addEntity(entity: DeviceInfo) {
+    func addEntity(entity: Device) {
         
         guard let data = try? JSONEncoder().encode(entity) else {return}
         
@@ -28,19 +28,36 @@ class FirestoreRepository {
         
     }
     
-    func getAllDevices() -> [DeviceInfo] {
-        
-        var deviceInfoArray = [DeviceInfo]()
+    func getAllDevices(_ block: @escaping (_ devices: [Device]) -> Void) {
+        var allDevices = [Device]()
         _db.collection("devices").getDocuments() { (querySnapshot, err) in
-            for document in querySnapshot!.documents {
-                let data = try? JSONSerialization.data(withJSONObject: document.data())
-                let deviceInfo = try? JSONDecoder().decode(DeviceInfo.self, from: data!)
-                deviceInfoArray.append(deviceInfo!)
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let jsonDict = document.data() as [String : Any]
+                    
+                    if JSONSerialization.isValidJSONObject(jsonDict) {
+                        if let data = try? JSONSerialization.data(withJSONObject: jsonDict, options: []) {
+                            let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                            if let dictionary = json as? [String: Any],
+                                let codigo = dictionary["codigo"],
+                                let fabricante = dictionary["fabricante"],
+                                let modelo = dictionary["modelo"],
+                                let imei = dictionary["imei"],
+                                let observacao = dictionary["observacao"],
+                                let patrimonio = dictionary["patrimonio"]{
+                                
+                                let device = Device(codigo: codigo as! String, fabricante: fabricante as! String, modelo: modelo as! String, imei: imei as! String, observacao: observacao as! String, patrimonio: patrimonio as! String)
+                                
+                                allDevices.append(device)
+                            }
+                        }
+                    }
+                }
+                block(allDevices)
             }
         }
-        // TODO check the reason why deviceInfoArray is returning 0 results
-        return deviceInfoArray
-        
     }
     
 }

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func readAllDevicesPressed(_ sender: Any) {
         
-        FirestoreRepository.shared.getAllDevices()
+//        FirestoreRepository.shared.getAllDevices()
         
     }
     @IBAction func InsertFirestorePressed(_ sender: Any) {
