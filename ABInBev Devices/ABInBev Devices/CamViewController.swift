@@ -12,7 +12,7 @@ import AVFoundation
 
 class CamViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     @IBOutlet weak var viewPreview: UIView!
-
+    
     var captureSession: AVCaptureSession!
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     
@@ -24,20 +24,21 @@ class CamViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegat
     }
     
     
-
+    
     @IBAction func btnBackAction(sender: AnyObject){
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     
     func startReading() {
         self.captureSession = AVCaptureSession()
-
-        guard let captureDevice = AVCaptureDevice.default(for: AVMediaType.video) else {
-            print("Error")
-            return
-        }
         
+        guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: AVMediaType.video, position: AVCaptureDevice.Position.front)
+            else {
+                print("Error")
+                return
+        }
+        AVCaptureDevice.Position.front
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else {
             print("Error ao iniciar camera")
             return
@@ -60,7 +61,7 @@ class CamViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegat
         videoPreviewLayer.frame = viewPreview.layer.bounds
         viewPreview.layer.addSublayer(videoPreviewLayer)
         
-
+        
         print(captureMetadataOutput.availableMetadataObjectTypes)
         captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
         self.captureSession.startRunning()
@@ -88,7 +89,7 @@ class CamViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegat
         if metadataObj.type == AVMetadataObject.ObjectType.qr {
             // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
             let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
-//            qrCodeFrameView?.frame = barCodeObject.bounds;
+            //            qrCodeFrameView?.frame = barCodeObject.bounds;
             
             if metadataObj.stringValue != nil {
                 let ac = UIAlertController(title: "Device", message: metadataObj.stringValue, preferredStyle: .alert)
@@ -101,6 +102,6 @@ class CamViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegat
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
-
+    
+    
 }
