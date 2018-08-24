@@ -39,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>M13Checkbox.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>Pods-ABInBev Devices.xcscheme</key>
 		<dict>
 			<key>isShown</key>

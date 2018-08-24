@@ -13,5 +13,5 @@ struct  DeviceInfo: Codable {
     var modelo: String
     var imei: String
     var observacao: String
-    var patrimonio: Int?
+    var patrimonio: String
 }

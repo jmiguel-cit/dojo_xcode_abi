@@ -13,9 +13,9 @@ final class FakeQRCodeReader {
     static func read() -> DeviceInfo {
         
         let fakeDevices: [DeviceInfo] = [
-            DeviceInfo(codigo: "1", fabricante: "Apple", modelo: "iPhone 5S", imei: "352047061506932", observacao: "obs 1", patrimonio: 111),
-            DeviceInfo(codigo: "2", fabricante: "Apple", modelo: "iPhone 6S", imei: "353288073041133", observacao: "obs 2", patrimonio: 222),
-            DeviceInfo(codigo: "3", fabricante: "Apple", modelo: "iPhone 7", imei: "355327086523493", observacao: "obs 3", patrimonio: 333)
+            DeviceInfo(codigo: "1", fabricante: "Apple", modelo: "iPhone 5S", imei: "352047061506932", observacao: "obs 1", patrimonio: "111"),
+            DeviceInfo(codigo: "2", fabricante: "Apple", modelo: "iPhone 6S", imei: "353288073041133", observacao: "obs 2", patrimonio: "222"),
+            DeviceInfo(codigo: "3", fabricante: "Apple", modelo: "iPhone 7", imei: "355327086523493", observacao: "obs 3", patrimonio: "333")
             
         ]
         let i = Int.random(in: 0..<fakeDevices.count)

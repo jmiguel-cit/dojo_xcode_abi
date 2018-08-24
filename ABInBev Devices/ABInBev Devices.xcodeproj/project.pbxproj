@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202AF2FB213055CF0026F7DC /* AvailableDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202AF2FA213055CF0026F7DC /* AvailableDeviceTableViewCell.swift */; };
+		202AF2FE21305EBC0026F7DC /* AvailableDevicesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202AF2FD21305EBC0026F7DC /* AvailableDevicesTableViewDelegate.swift */; };
 		2067F7212118A0A9004629EC /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7202118A0A9004629EC /* DeviceInfo.swift */; };
 		2067F7232118A1C6004629EC /* FakeQRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */; };
 		2067F7252118A618004629EC /* FirestoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F7242118A618004629EC /* FirestoreRepository.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		202AF2FA213055CF0026F7DC /* AvailableDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		202AF2FD21305EBC0026F7DC /* AvailableDevicesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDevicesTableViewDelegate.swift; sourceTree = "<group>"; };
 		2067F7202118A0A9004629EC /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		2067F7222118A1C6004629EC /* FakeQRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeQRCodeReader.swift; sourceTree = "<group>"; };
 		2067F7242118A618004629EC /* FirestoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRepository.swift; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202AF2FC21305E790026F7DC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				202AF2FD21305EBC0026F7DC /* AvailableDevicesTableViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		20B5164A21176F5C00A4AB64 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +85,7 @@
 		20B5165521176F5C00A4AB64 /* ABInBev Devices */ = {
 			isa = PBXGroup;
 			children = (
+				202AF2FC21305E790026F7DC /* Delegates */,
 				8CCC8428212C6ACA0091658B /* Cells */,
 				8CCC8425212C693F0091658B /* ViewControllers */,
 				20B516682117706F00A4AB64 /* GoogleService-Info.plist */,
@@ -101,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8CCC8429212C6ADB0091658B /* Xibs */,
+				202AF2FA213055CF0026F7DC /* AvailableDeviceTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -264,7 +278,9 @@
 			files = (
 				20B5165921176F5C00A4AB64 /* ViewController.swift in Sources */,
 				2067F7252118A618004629EC /* FirestoreRepository.swift in Sources */,
+				202AF2FB213055CF0026F7DC /* AvailableDeviceTableViewCell.swift in Sources */,
 				2067F7232118A1C6004629EC /* FakeQRCodeReader.swift in Sources */,
+				202AF2FE21305EBC0026F7DC /* AvailableDevicesTableViewDelegate.swift in Sources */,
 				2067F7212118A0A9004629EC /* DeviceInfo.swift in Sources */,
 				8CCC8427212C699C0091658B /* DevicesViewController.swift in Sources */,
 				20B5165721176F5C00A4AB64 /* AppDelegate.swift in Sources */,
