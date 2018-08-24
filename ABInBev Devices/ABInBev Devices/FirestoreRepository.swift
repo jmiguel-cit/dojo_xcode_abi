@@ -28,20 +28,22 @@ class FirestoreRepository {
         
     }
     
-    func getAllDevices() -> [DeviceInfo] {
+    func getAllDevices(completion: @escaping ([DeviceInfo]) -> Void){
         
-        var deviceInfoArray = [DeviceInfo]()
-        _db.collection("devices").getDocuments() { (querySnapshot, err) in
-            for document in querySnapshot!.documents {
-                let data = try? JSONSerialization.data(withJSONObject: document.data())
-                let deviceInfo = try? JSONDecoder().decode(DeviceInfo.self, from: data!)
-                deviceInfoArray.append(deviceInfo!)
+       var deviceInfoArray = [DeviceInfo]()
+         _db.collection("devices").getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(deviceInfoArray)
+            } else {
+                for document in querySnapshot!.documents {
+                     let data = try? JSONSerialization.data(withJSONObject: document.data(), options: [])
+                     let deviceInfo = try? JSONDecoder().decode(DeviceInfo.self, from: data!)
+                    deviceInfoArray.append(deviceInfo!)
+                }
+                completion(deviceInfoArray)
             }
         }
-        // TODO check the reason why deviceInfoArray is returning 0 results
-        return deviceInfoArray
-        
     }
-    
 }
 

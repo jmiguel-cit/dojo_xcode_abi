@@ -9,5 +9,6 @@ target 'ABInBev Devices' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
+  pod 'M13Checkbox', :git => 'https://github.com/djbe/M13Checkbox.git', :branch => 'swift_4_2'
   
 end

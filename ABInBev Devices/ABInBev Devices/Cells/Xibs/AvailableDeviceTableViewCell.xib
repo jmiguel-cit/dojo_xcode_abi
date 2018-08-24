@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="U69-uf-t5p">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U69-uf-t5p" id="qr1-n7-Kzj">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYp-HU-c95">
+                        <rect key="frame" x="68" y="34" width="259" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FTu-3N-CNt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ6-G9-Qkl">
+                        <rect key="frame" x="68" y="11" width="259" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zh4-vI-gv4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-yv-o03" customClass="M13Checkbox" customModule="M13Checkbox">
+                        <rect key="frame" x="335" y="20" width="24" height="24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="eg1-3f-Ju0"/>
+                            <constraint firstAttribute="width" constant="24" id="hfN-Qc-zf6"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vZa-vp-Bpe">
+                        <rect key="frame" x="16" y="10" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="7Qu-iG-Jmw"/>
+                            <constraint firstAttribute="width" constant="44" id="LE6-9d-Y7P"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mdr-yv-o03" secondAttribute="trailing" constant="16" id="0FI-di-8Rl"/>
+                    <constraint firstItem="OQ6-G9-Qkl" firstAttribute="leading" secondItem="vZa-vp-Bpe" secondAttribute="trailing" constant="8" id="1eD-oI-1ow"/>
+                    <constraint firstItem="vZa-vp-Bpe" firstAttribute="top" secondItem="qr1-n7-Kzj" secondAttribute="top" constant="10" id="AKS-7N-ZN6"/>
+                    <constraint firstItem="bYp-HU-c95" firstAttribute="leading" secondItem="vZa-vp-Bpe" secondAttribute="trailing" constant="8" id="DX8-Zg-WmF"/>
+                    <constraint firstItem="mdr-yv-o03" firstAttribute="leading" secondItem="bYp-HU-c95" secondAttribute="trailing" constant="8" id="HYR-Qf-gTl"/>
+                    <constraint firstItem="vZa-vp-Bpe" firstAttribute="leading" secondItem="qr1-n7-Kzj" secondAttribute="leading" constant="16" id="eco-v6-FcR"/>
+                    <constraint firstItem="mdr-yv-o03" firstAttribute="top" secondItem="qr1-n7-Kzj" secondAttribute="top" constant="20" id="iLw-ZU-Whf"/>
+                    <constraint firstItem="OQ6-G9-Qkl" firstAttribute="top" secondItem="qr1-n7-Kzj" secondAttribute="top" constant="11" id="oDx-x6-pzX"/>
+                    <constraint firstItem="mdr-yv-o03" firstAttribute="leading" secondItem="OQ6-G9-Qkl" secondAttribute="trailing" constant="8" id="ufQ-Hc-Msi"/>
+                    <constraint firstItem="bYp-HU-c95" firstAttribute="top" secondItem="OQ6-G9-Qkl" secondAttribute="bottom" constant="2" id="zQ7-TB-kWR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-38" y="-116"/>
+        </tableViewCell>
+    </objects>
+</document>

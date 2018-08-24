@@ -11,6 +11,7 @@ import Firebase
 
 class ViewController: UIViewController {
 
+    var deviceInfoArray = [DeviceInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,10 @@ class ViewController: UIViewController {
     
     @IBAction func readAllDevicesPressed(_ sender: Any) {
         
-        FirestoreRepository.shared.getAllDevices()
+        FirestoreRepository.shared.getAllDevices() {deviceInfoArray in
+            self.deviceInfoArray = deviceInfoArray
+        }
+        
         
     }
     @IBAction func InsertFirestorePressed(_ sender: Any) {
@@ -34,5 +38,6 @@ class ViewController: UIViewController {
         FirestoreRepository.shared.addEntity(entity: deviceinfo)
         
     }
+    
 }
 
